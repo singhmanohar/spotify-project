@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>spotify clone</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link rel="stylesheet" href="/css/style.css">
+   <link rel="stylesheet" href="/css/signin.css">
+   <link rel="shortcut icon" href="#">
+</head>
+<body>
+    {{>header}}
+    {{#if servererror}}
+    {{servererror}}
+    {{/if}}
+    <div id="container">
+        <div id="formdiv">
+            <h2>sign in</h2>
+            <form method="post" action="/signin" id="form">  
+                <input type="email" name="email" placeholder="Enter your email">  
+                <input type="password" name="password" placeholder="Enter your password">
+                <button>sign in</button>
+                <a href="/home">forgot password</a>
+            </form>
+            <div id="signup">
+                <p>I don't have an account</p>
+                <a href="/register">sign up</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

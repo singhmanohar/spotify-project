@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+
+<body>
+    {{>header}}
+    <div id="container">
+        <div id="formdiv">
+            <h2>sign up</h2>
+            <form method="post" action="/register" id="form">
+                <input type="text" name="name" placeholder="Enter your name">
+                <input type="email" name="email" placeholder="Enter your email">
+                <input type="number" name="phone" placeholder="Enter your number">
+                <input type="password" name="password" placeholder="Enter your password">
+                <input type="password" name="cpassword" placeholder="Conform your password">
+                <button id="button">sign up</button>
+                <p>I have an account</p>
+                <a href="/signin">sign in</a>
+            </form>
+        </div>
+    </div>
+    <script src="/script/register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(45deg, rgb(1, 245, 254), rgb(255, 0, 217))no-repeat center center/cover;
+}
+
+#navbar ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(215, 215, 215);
+    align-items: center;
+}
+
+#navbar ul li {
+    list-style: none;
+    margin: 0px 22px;
+    padding: 1px 0px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+#navbar ul li a:hover{
+    color: blue;
+}
+#logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+#container {
+    height: 90vh;
+
+}
+
+#container_box {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#box {
+
+    width: 85vw;
+    height: 70vh;
+    background: url('../images/music_girl.jpg')no-repeat center center/cover;
+    margin: auto;
+}
+
+#box h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 7px 24px;
+}
+
+.songitem {
+    color: black;
+    background-color: white;
+    width: 40vw;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 14px;
+    margin: 10px 12px;
+}
+
+.songitem img {
+    width: 6vw;
+    height: 6vh;
+    margin: 0px 7px;
+    padding: 0px 5px;
+    border-radius: 12px;
+}
+
+.songitem .song_name {
+    margin: 0px 2px;
+    padding: 3px 3px;
+    font-size: 1.7vw;
+}
+
+.songitem .song_time {
+    margin: 0px 2px;
+    padding: 0px 2px;
+    font-size: 1.5vw;
+}
+.songitem i{
+    margin: 0px 2px;
+    padding: 0px 2px;
+    font-size: 1.4vw;
+    cursor: pointer;
+}
+.songitem i:active{
+    color: blue;
+}
+#playarea {
+
+    width: 100vw;
+    height: 12vh;
+    background-color: #280021;
+    position: absolute;
+    float: left;
+    bottom: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+}
+
+#playarea input {
+    width: 80vw;
+    cursor: pointer;
+
+}
+
+#playarea_item {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#playarea_item img {
+    width: 10vw;
+    height: 2vh;
+    opacity: 0;
+    margin: 0px 20px;
+    padding-bottom: 5px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#playarea div{
+    margin-left: 70px;
+}
+#playarea_item .icon {
+    color: white;
+    text-align: center;
+    margin: 0px 2px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#playarea_item .icon:active{
+    color: blue;
+}
+#mastersongname{
+    width: 20vw;
+    color: white;
+    font-size: 1.5vw;
+    margin: 0px 23px;
+}
+@media only screen and (max-width:500px) {
+    #navbar ul li {
+        
+        margin: 0px 7px;
+        font-size: 1.1rem;
+    }
+    #logo img {
+        width: 25px;
+        height: 30px;
+    }
+}
+@media only screen and (min-width:335px)and (max-width:500px) {
+    .songitem .song_name {
+        font-size: 2vw;
+    }
+    #playarea div{
+        margin-left: 20px;
+    }
+}
+@media only screen and (max-width:335px){
+    .songitem .song_name {
+        font-size: 2.5vw;
+    }
+    #playarea div{
+        margin-left: 20px;
+    }
+}

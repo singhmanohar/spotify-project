@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>spotify clone</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link rel="stylesheet" href="/css/style.css">
+   <link rel="stylesheet" href="/css/home.css">
+   <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+   {{>header}}
+   {{#if serversuccess}}
+   {{serversuccess}}
+   {{/if}}
+   <div id="container">
+      <div id="container_box">
+         <div id="box">
+            <h3>best of ncs no copyright sound</h3>
+            <div class="songitem">
+               <img alt="song">
+               <span class="song_name"></span>
+               <span class="song_time">5:20<i id="0" class="songitemplay fa-regular fa-circle-play "></i></span>
+            </div>
+            <div class="songitem">
+               <img alt="song">
+               <span class="song_name"></span>
+               <span class="song_time">5:20<i id="1" class="songitemplay fa-regular fa-circle-play "></i></span>
+            </div>
+            <div class="songitem">
+               <img alt="song">
+               <span class="song_name"></span>
+               <span class="song_time">5:20<i id="2" class="songitemplay fa-regular fa-circle-play "></i></span>
+            </div>
+            <div class="songitem">
+               <img alt="song">
+               <span class="song_name"></span>
+               <span class="song_time">5:20<i id="3" class="songitemplay fa-regular fa-circle-play "></i></span>
+            </div>
+            <div class="songitem">
+               <img alt="song">
+               <span class="song_name"></span>
+               <span class="song_time">5:20<i id="4" class="songitemplay fa-regular fa-circle-play "></i></span>
+            </div>
+            <div class="songitem">
+               <img alt="song">
+               <span class="song_name"></span>
+               <span class="song_time">5:20<i id="5" class="songitemplay fa-regular fa-circle-play "></i></span>
+            </div>
+            <div class="songitem">
+               <img alt="song">
+               <span class="song_name"></span>
+               <span class="song_time">5:20<i id="6" class="songitemplay fa-regular fa-circle-play "></i></span>
+            </div>
+         </div>
+      </div>
+
+      <div id="playarea">
+         <input type="range" name="range" id="myprogressbar" min="0" value="0" max="100">
+         <div id="playarea_item">
+            <img src="/images/music.gif" id="gif" alt="load">
+            <div>
+               <i class="fa-sharp  fa-solid fa-backward-step icon" id="reverse"></i>
+               <i class=" fa-regular  fa-circle-play icon" id="masterplay"></i>
+               <i class="fa-sharp  fa-solid fa-forward-step icon" id="next"></i>
+            </div>
+            <span id="mastersongname">aman dattarval background</span>
+         </div>
+      </div>
+   </div>
+   <script src="/script/script.js"></script>
+</body>
+
+</html>
